@@ -1,0 +1,35 @@
+{"intents": [
+        {"tag": "general info",
+         "patterns": ["What is yoga", "define yoga"],
+         "responses": ["yoga is an ancient practice that brings together mind and body", "yoga is the practice of liberation from suffering","yoga is a series of stretches and strength building movements"]
+        },
+        {"tag": "easy yoga",
+        "patterns": ["what is an easy yoga pose", "easy yoga pose", "beginner yoga pose", "yoga for beginner"],
+        "responses": ["You can try Child's Pose, Sukhasana, or Savasana", "A beginner pose is Staff Pose", "The easiest yoga pose is Sukhasana"]
+       },
+       {"tag": "hard yoga",
+       "patterns": ["what is a hard yoga pose", "hard yoga pose", "advanced yoga pose", "yoga for advanced"],
+       "responses": ["You can try Gomukhasana", "An advanced pose is full bow pose"]
+      },
+       {"tag": "greeting",
+       "patterns": ["Hi", "How are you","Hey","Hola", "Hello", "What's up", "How's it going?"],
+       "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"]
+      },
+      {"tag": "goodbye",
+       "patterns": ["Bye", "See ya", "Goodbye", "Nice chatting with you, bye", "Later", "Peace out"],
+       "responses": ["See you!", "Have a groovy day", "Have a nice day", "Bye! Come back again soon."]
+      },
+      {"tag": "thanks",
+       "patterns": ["Thanks", "Thank you", "Gracias", "Cool, thanks", "Thanks for helping me"],
+       "responses": ["Happy to help!", "Any time!", "My pleasure","No probs, Bobs", "Aint no thang"]
+      },
+      {"tag": "noanswer",
+       "patterns": [],
+       "responses": ["Sorry, please give me more info", "You must ask the right questions"]
+      },
+      {"tag": "options",
+      "patterns": ["How you could help me?", "What you can do?", "How you can be helpful?"],
+      "responses": ["I can tell you the best yoga poses for your current issue", "I can list yoga poses to assist in healing body ailments"]
+      }
+   ]
+}
