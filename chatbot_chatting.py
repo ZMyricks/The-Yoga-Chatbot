@@ -1,4 +1,3 @@
-# chat.py
 import random
 import json
 
@@ -9,10 +8,10 @@ from nlp_utils import bag_of_words, tokenize_yoga_data
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-with open('myChatbot/intents.json', 'r') as json_data:
+with open('idk/myChatbot/intents.json', 'r') as json_data:
     intents = json.load(json_data)
 
-FILE = "myChatbot/data.pth"
+FILE = "idk/myChatbot/data.pth"
 data = torch.load(FILE)
 
 input_size = data["input_size"]
@@ -27,9 +26,8 @@ model.load_state_dict(model_state)
 model.eval()
 
 bot_name = "The Yoga Chatbot"
-print("Let's chat! (type 'quit' to exit)")
+print("Let's speak about yoga (type 'quit' to exit)")
 while True:
-    # sentence = "do you use credit cards?"
     sentence = input("You: ")
     if sentence == "quit":
         break

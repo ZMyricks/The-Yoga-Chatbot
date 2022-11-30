@@ -9,7 +9,7 @@ from torch.utils.data import Dataset, DataLoader
 from nlp_utils import bag_of_words, tokenize_yoga_data, stem_and_lower
 from chatbot_torch_model import Yoga_Neural_Network
 
-with open('myChatbot/intents.json', 'r') as f:
+with open('idk/myChatbot/intents.json', 'r') as f:
     intents = json.load(f)
 
 all_words = []
@@ -62,7 +62,7 @@ hidden_size = 8
 output_size = len(tags)
 print(input_size, output_size)
 
-class ChatDataset(Dataset):
+class YogaChatDataset(Dataset):
 
     def __init__(self):
         self.n_samples = len(X_train)
@@ -77,7 +77,7 @@ class ChatDataset(Dataset):
     def __len__(self):
         return self.n_samples
 
-dataset = ChatDataset()
+dataset = YogaChatDataset()
 train_loader = DataLoader(dataset=dataset,
                           batch_size=batch_size,
                           shuffle=True,
@@ -123,7 +123,7 @@ data = {
 "tags": tags
 }
 
-FILE = "myChatbot/data.pth"
+FILE = "idk/myChatbot/data.pth"
 torch.save(data, FILE)
 
 print(f'training complete. file saved to {FILE}')
