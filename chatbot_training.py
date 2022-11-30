@@ -9,7 +9,7 @@ from torch.utils.data import Dataset, DataLoader
 from nlp_utils import bag_of_words, tokenize_yoga_data, stem_and_lower
 from chatbot_torch_model import Yoga_Neural_Network
 
-with open('idk/myChatbot/intents.json', 'r') as f:
+with open('intents.json', 'r') as f:
     intents = json.load(f)
 
 all_words = []
