@@ -123,7 +123,7 @@ data = {
 "tags": tags
 }
 
-FILE = "idk/myChatbot/data.pth"
+FILE = "data.pth"
 torch.save(data, FILE)
 
 print(f'training complete. file saved to {FILE}')
