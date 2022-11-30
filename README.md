@@ -1,3 +1,5 @@
 # The-Yoga-Chatbot
 
-A chatbot implementation all about Yoga using Python code. 
+A chatbot that gives information about Yoga
+
+Written in Python code
